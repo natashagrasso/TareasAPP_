@@ -1,0 +1,54 @@
+
+
+el archivo app.jsx es nuestro componente  (principal) padre , y dentro de app.jsx se encuentran los componentes hijos
+
+en los archivos .jsx no se usan los condicionales, se usan los ternarios (Los ternarios son una solución sencilla a la hora de renderizar condicionalmente)
+El renderizado es la representación gráfica del contenido de una página, es decir, el proceso necesario para mostrar una página web en un navegador
+
+
+en react no se usan clases, en el class name se maqueta la estructura del componente principal por eso le llamamos "container"
+las propiedades como por ejemplo "container mx-auto mt-20" son propias de tailwinds
+
+el -indigo es para que cuando vaya en formato celular se modifique
+
+el placeholder es como cuando completamos un formulario, y cuando lo apretamos desaparece
+
+LOS HOOKS SON FUNCIONES PERMITEN CREAR COMPONENTES (separan la interfaz de usuario en bloques independientes de construccion que podemos reutilizar)(Aceptan entradas arbitrarias (llamadas “props”) y retornan elementos de React que describen lo que debe aparecer en la pantalla.)
+SIN LA NECESIDAD DE USAR CLASES. 
+uno de los hooks mas basicos q nos brinda react es useState que nos brinda cual es el estado actual del componente y una funcion q lo actualiza (escucha algun evento o algun cambio)
+el useEffect, al usar este hook, le estamos indicando a React que el componente tiene que hacer algo después de renderizarse.(representación gráfica del contenido de una página, es decir, el proceso necesario para mostrar una página web en un navegador.)
+
+
+se pueden usar tantos HOOKS como se necesiten, los hooks pueden recibir cualquier parametro (boolean, string etc)
+
+algunas reglas de los hooks:
+-los hooks se colocan siempre en la parte superior del componente
+-no se pueden armar condicionales dentro de los hooks, se puede implementar ternarios pero no condicionales
+
+ e.preventDefault():
+Al evento se le pasa la función y no una cadena de texto. Esto se usa para prevenir un comportamiento por defecto o la propagación de un evento debes hacerlo explícitamente llamando los métodos preventDefault() y stopPropagation()
+son aquellos eventos de navegador que tienen la propiedad cancelable , por ejemplo, el evento click .
+
+
+onSubmit es un evento de formulario que nos permite ejecutar un submit en React. nos permite ejecutar acciones cuando el usuario de clic en un botón de tipo submit.
+
+el onChange nos permiten definir una acción a ejecutar cuando una situación ocurre. Este evento se utiliza comúnmente para tratar los datos introducidos por el usuario en un formulario
+
+
+el e.targuet.value es objeto que representa el evento, y uno de sus atributos es el target, que viene a ser el elemento que recibió el evento
+
+para hacer la validacion del formulario, es decir que aparezca cuando los campos son obligatorios
+
+como buena practica nunca se deben dejar los "console.log()" en ninguna parte del proyecto, porque se ven en la consola, el cliente ve todo. 
+
+para pasar informacion de un componente a otro, por ejemplo del componente "formulario" al app.jsx,  en app.jsx. en principio importamos en el componente app.jsx 
+el componente que vamos a necesitar, en este caso importamos el componente "formulario"
+
+-los Props se refieren a las propiedades las cuales cumplen un rol importante en el proceso de desarrollo de una aplicación o página web. Los componentes son los bloques de construcción de React y estos componentes usan Props para mejorar su funcionalidad y poder reusar el código. estas solo pasan informacion de padre a hijo
+
+-state representan los valores renderizados, es decir, lo que hay actualmente en la pantalla. Las llamadas a setState son asíncronas; no te fíes de que this. state refleje el nuevo valor inmediatamente después de llamar a setState .
+
+*Para reiniciar el formulario, es decir q se vacie, lo q se puede hacer es tomar las funciones del hook, cada vez q se completan las tareas se toman esas funciones y se vuelven a 0
+
+* — .map( array.
+El método map, lo utilizamos cuando queremos transformar un arreglo(array), pero dejando el arreglo original, dicho en otras palabras ejecuta una función dada en cada elemento del arreglo actual y crea un nuevo arreglo con el resultado de la función dada.
